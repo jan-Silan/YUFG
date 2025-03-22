@@ -2,7 +2,11 @@ let navLinks = document.getElementById('navbar_hamburger');
 let narrowLinks = document.getElementById('navbar_links_small');
 let burgerGap = document.getElementById('burger_gap');
 let gradientRectangle = document.getElementById('gradient_rectangle');
+var myIndex = 0;
+
 navLinks.addEventListener('click', toggle);
+carousel();
+
 function toggle() {
     narrowLinks.classList.toggle('hidden');
     burgerGap.classList.toggle('hidden');
@@ -10,11 +14,6 @@ function toggle() {
     var divLoc = document.getElementById('actual_page_contents').offsetTop;
     gradientRectangle.style.height = divLoc + divHeight + "px";
 }
-
-
-
-var myIndex = 0;
-carousel();
 
 function carousel() {
   var i;
