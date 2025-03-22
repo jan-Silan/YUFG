@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*GLOBAL SETTINGS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+}
+p {
+  font-size: 1.4em;
+
+}
+
+/*NAVBAR AND SPLASH PAGE*/
+.gradient_rectangle {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40em;
+  background: rgb(148,184,254);
+  background: linear-gradient(135deg, rgba(148,184,254,1) 0%, rgba(174,218,236,1) 53%, rgba(203,254,216,1) 100%);
+}
+.actual_page_contents {
+  width: 100%;
+  height: 30em;
+  z-index: 2;
+  /*position: absolute;*/
+  margin-top: 5em;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+  ". .";
+}
+.logo_main {
+    height: 24em;
+    padding-left: 3em;
+}
+.yufg_title {
+  color: #FFFFFF;
+  font-size: 5em;
+  text-shadow: 0 0 4px #00000066;
+}
+.navbar {
+    /* position: absolute; */
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 5em;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #0000004C;
+    overflow: hidden;
+}
+.navbar_logo {
+    height: 5em;
+    align-self: flex-start;
+    grid-area: navbar_logo;
+}
+.navbar_links {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 2.5em;
+}
+.navbar_links_small {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.navbar_item {
+    padding: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 3;
+}
+.hidden {
+  display: none;
+}
+.hamburger_bun {
+  display: none;
+}
+
+/*MAIN INFO SECTION*/
+.about_info_section {
+  margin-top: 2em;
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 0.25fr 1.25fr 1.5fr;
+  gap: 0 0;
+  grid-template-areas:
+  "malaria_logo who_are_we"
+  "malaria_logo intro_text"
+  "msf_logo intro_text";
+  justify-items: center;
+}
+.malaria_logo {
+  grid-area: malaria_logo;
+  width: 80%;
+  object-fit: contain;
+  place-self: center;
+}
+.msf_logo {
+  grid-area: msf_logo;
+  width: 80%;
+  place-self: center;
+  object-fit: contain;
+}
+.who_are_we {
+  grid-area: who_are_we;
+  font-size: 4em;
+  width: 80%;
+  height: 80%;
+}
+.intro_text {
+  grid-area: intro_text;
+  font-size: 1.4em;
+  width: 80%;
+  height: 80%;
+}
+
+/*MISSION SECTION*/
+.our_mission {
+  grid-area: title;
+  font-size: 4em;
+  width: 80%;
+  height: 80%;
+}
+.mission_text {
+  grid-area: mission_text;
+  width: 80%;
+  height: 80%;
+}
+.map {
+  grid-area: map;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+.our_mission_section {
+  margin-top: 2em;
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 1fr 7fr;
+  gap: 0 0;
+  grid-template-areas:
+  "map title"
+  "map mission_text";
+  justify-items: center;
+}
+
+/*JOIN US SECTION*/
+.support_us {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "join_survey malaria_work";
+  place-items: center;
+}
+.malaria_work {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+}
+.malaria_images {
+  object-fit: fill;
+  width: 100%;
+  height: 24em;
+}
+.join_survey {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.join_survey a {
+  background: #94B8FE;
+  background: linear-gradient(135deg, #85a5e5 0%, #9cc4d3 53%, #b7e5c3 100%);
+  border-radius: 1em;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px #00000066;
+  font-size: 2em;
+  padding: 1em;
+  width: 80%;
+  text-align: center;
+}
+
+/*FOOTER SECTION*/
+.footer {
+  width: 100%;
+  margin-top: 2em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  background: rgb(148,184,254);
+  background: linear-gradient(135deg, #85a5e5 0%, #9cc4d3 53%, #b7e5c3 100%);
+}
+.footer_icons {
+  display: flex;
+  gap: 0.5em;
+}
+.footer a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.footer .fa {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+.email {
+  margin: 0.2em;
+  font-size: 1.4em;
+}
+.footer_text {
+  align-self: center;
+  color: #FFFFFF;
+
+}
+
+/*MOBILE DESIGN*/
+@media only screen and (max-width: 800px) {
+  .about_info_section {
+    margin-top: 2em;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.1fr 1.6fr;
+    gap: 0 0;
+    grid-template-areas:
+    "malaria_logo msf_logo"
+    "who_are_we who_are_we"
+    "intro_text intro_text";
+  }
+  .malaria_logo {
+    grid-area: malaria_logo;
+    width: 80%;
+    object-fit: contain;
+  }
+  .msf_logo {
+    grid-area: msf_logo;
+    width: 80%;
+    object-fit: contain;
+  }
+  .who_are_we {
+    grid-area: who_are_we;
+    font-size: 3em;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+  }
+  .intro_text {
+    grid-area: intro_text;
+    font-size: 1.4em;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+  }
+  .big_navbar {
+    display: none;
+  }
+  .navbar {
+    z-index: 1;
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #0000004C;
+    overflow: hidden;
+    justify-content: center;
+
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr min-content;
+    gap: 0px 0px;
+  }
+  .navbar_logo {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .navbar_links_small {
+    margin-top: 0.5em;
+    font-size: 2em;
+    list-style-type: none;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 0.5em;
+
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .navbar_links {
+    z-index: 3;
+  }
+  #navbar_hamburger {
+    float: right;
+    clear: right;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 3.2em;
+    margin-top: 14.4px;
+    place-self: center;
+  }
+  .hamburger_bun {
+    display: inline;
+    align-items: end;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .logo_main {
+    display: none;
+  }
+  .yufg_title {
+    text-align: center;
+  }
+  .actual_page_contents {
+    width: 100%;
+    height: 30em;
+    z-index: 2;
+    /*position: absolute;*/
+    margin-top: 5em;
+    display: flex;
+    place-items: center;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". .";
+  }
+  .our_mission_section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 0.5fr 6fr;
+    gap: 0 0;
+    grid-template-areas:
+    "map"
+    "title"
+    "mission_text";
+    justify-items: center;
+  }
+  .our_mission {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0.3em;
+  }
+  .mission_text {
+    text-align: center;
+  }
+  .map {
+    height: 24em;
+  }
+  .support_us {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  .malaria_work {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+  }
+  .malaria_images {
+    object-fit: fill;
+    width: 100%;
+    height: 18em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  .join_survey {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  .join_survey a {
+    background: #94B8FE;
+    background: linear-gradient(135deg, #85a5e5 0%, #9cc4d3 53%, #b7e5c3 100%);
+    border-radius: 1em;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px #00000066;
+    font-size: 2em;
+    padding: 1em;
+    width: 80%;
+  }
+}
