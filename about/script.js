@@ -8,6 +8,6 @@ navLinks.addEventListener('click', toggle);
 function toggle() {
     narrowLinks.classList.toggle('hidden');
     burgerGap.classList.toggle('hidden');
-    var divLoc = document.getElementById('actual_page_contents').offsetTop;
-    gradientRectangle.style.height = divLoc + "px";
+    var divHeight = document.getElementById('navbar').offsetHeight;
+    gradientRectangle.style.height = divHeight + "px";
 }
