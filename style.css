@@ -178,7 +178,7 @@ p {
   flex-direction: column;
 }
 .malaria_images {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
   height: 24em;
 }
@@ -380,7 +380,7 @@ p {
     flex-direction: column;
   }
   .malaria_images {
-    object-fit: fill;
+    object-fit: contain;
     width: 100%;
     height: 18em;
     margin-bottom: 2em;
