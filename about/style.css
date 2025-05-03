@@ -1,6 +1,7 @@
 @import url(https://yufg.vercel.app/style.css);
 .actual_page_contents {
     height: 0em;
+    margin-top: 0;
 }
 .gradient_rectangle {
     height: 5em;
@@ -8,5 +9,6 @@
 @media only screen and (max-width: 800px) {
     .actual_page_contents {
         height: 0em;
+        margin-top: 0;
     }
 }
