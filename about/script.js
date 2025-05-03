@@ -9,6 +9,6 @@ function toggle() {
     narrowLinks.classList.toggle('hidden');
     burgerGap.classList.toggle('hidden');
     var divHeight = document.getElementById('navbar').offsetHeight;
-    console.log("divHeight")
+    console.log(divHeight);
     gradientRectangle.style.height = divHeight + "px";
 }
